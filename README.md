@@ -2,6 +2,13 @@
 
 Simple Web Calculator Designed with Material Design :-)
 
+## Deployment
+
+Upload files to the synap-dev-assets S3 bucket (/calculator folder)
+Ensure that any links to JS, CSS etc are in absolute format
+
+The widget is served via synap-web-server at widget.synap.ac/calculator
+
 ## Demo
 
 ![Demo](https://raw.githubusercontent.com/xxczaki/calculator.js/master/demo-view.png)
@@ -56,6 +63,6 @@ Run index.html to see it in action!
 
 [MIT](https://opensource.org/licenses/MIT)
 
-Also: Thank you to all contributors for their help ;-) 
+Also: Thank you to all contributors for their help ;-)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
