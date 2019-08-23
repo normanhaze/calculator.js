@@ -19,10 +19,6 @@ a, .btn {
   transition: all .5s;
 }
 
-.container {
-  width: 94%;
-}
-
 :focus {
   outline: none;
   box-shadow: 0px 0px 0px transparent;
@@ -31,6 +27,8 @@ a, .btn {
 .calculator {
   background: #F0F0F0;
   box-shadow: 2px 3px 6px #212121;
+  width: 360px;
+  margin: auto;
 }
 
 .displayBox {
@@ -38,6 +36,8 @@ a, .btn {
   padding: 0;
   min-height: 220px;
   overflow: hidden;
+  width: 360px;
+
 }
 
 .displayText {
@@ -60,11 +60,17 @@ a, .btn {
   padding: 0;
   padding-left: -20px;
   padding-top: 10px;
+  margin-right: -20px;
   border-left: 1px solid #E5E5E5;
+  width: 80px;
+  float: right;
 }
 
 .numberPad {
   padding-top: 14px;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn-calc, .btn-calc:focus {
@@ -89,7 +95,6 @@ a, .btn {
   background: transparent;
   color: #999;
   font-size: 25px;
-  /*width: 97px;*/
   width: 100%;
   height: 80.8px;
   font-weight: 100;
@@ -169,65 +174,6 @@ a, .btn {
   border: 0 !important;
 }
 
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 768px) {
-  body {
-    padding-top: 1.3em;
-  }
-  .calculator {
-    height: 590px;
-    box-shadow: 2px 3px 6px #888;
-  }
-  .displayBox {
-    height: 150px;
-  }
-  .displayText {
-    margin-top: 80px;
-    font-size: 50px;
-  }
-  .btn-calc, .btn-calc:focus {
-    width: 70px;
-    height: 70px;
-    font-size: 18px;
-  }
-  .operationSide {
-    padding: 0;
-  }
-  .btn-operation, .btn-operation:focus {
-    width: 60px;
-    height: 60px;
-    font-size: 18px;
-  }
-  .clear, .clear:focus {
-    width: 70px;
-    height: 70px;
-    font-size: 18px;
-  }
-  .equals, .equals:focus {
-    width: 62px;
-    height: 63px;
-    margin-top: 1px;
-  }
-  .modal-dialog {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .container {
-    width: 85%;
-  }
-  .btn-calc, .clear, .btn-calc:focus, .clear:focus {
-    width: 80px;
-    height: 80px;
-  }
-  .equals, .equals:focus {
-    width: 100%;
-    height: 96px;
-  }
-}
-
 .hvr-radial-out:before {
   background: #FFF !important;
   border-radius: 100%;
@@ -238,5 +184,3 @@ a, .btn {
   background: #FFF !important;
   transition-duration: 0.5s;
 }
-
-
