@@ -27,16 +27,16 @@ a, .btn {
 .calculator {
   background: #F0F0F0;
   box-shadow: 2px 3px 6px #212121;
-  width: 360px;
+  width: 260px;
   margin: auto;
 }
 
 .displayBox {
   background: #455A64;
   padding: 0;
-  min-height: 220px;
+  min-height: 120px;
   overflow: hidden;
-  width: 360px;
+  width: 260px;
 
 }
 
@@ -45,7 +45,7 @@ a, .btn {
   background: transparent;
   border: none;
   color: #FFF;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 100;
   padding-right: 20px;
   padding-bottom: -10px;
@@ -55,30 +55,36 @@ a, .btn {
 }
 
 .operationSide {
+  display: flex;
+  flex-direction: column;
   background: #FFF;
   margin-top: -14px;
   padding: 0;
   padding-left: -20px;
   padding-top: 10px;
-  margin-right: -20px;
   border-left: 1px solid #E5E5E5;
-  width: 80px;
+  width: 70px;
   float: right;
 }
 
 .numberPad {
   padding-top: 14px;
-  width: 360px;
+  width: 260px;
   display: flex;
   justify-content: space-between;
+  height: 250px;
+}
+
+.numberButtons {
+  width: 100%;
 }
 
 .btn-calc, .btn-calc:focus {
   background: transparent;
   color: #A2A2A2;
-  font-size: 25px;
-  width: 75px;
-  height: 75px;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
   font-weight: 100;
   border-radius: 100px;
   outline: none;
@@ -92,9 +98,10 @@ a, .btn {
 }
 
 .btn-operation {
+  align-self: flex-end;
   background: transparent;
   color: #999;
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
   height: 80.8px;
   font-weight: 100;
@@ -127,9 +134,9 @@ a, .btn {
 .clear, .clear:focus {
   background: #455A64 !important;
   color: #FFF;
-  font-size: 25px;
-  width: 75px;
-  height: 75px;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
   font-weight: 100;
   border-radius: 100px;
   outline: none;
