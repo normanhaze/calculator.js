@@ -28,7 +28,7 @@ $(document).ready(function () {
   // ON CLICK ON NUMBERS
   $('#clear').click(function () {
     displayBox.innerHTML = '0'
-    $('#display').css('font-size', '80px')
+    $('#display').css('font-size', '40px')
     $('#display').css('margin-top', '110px')
     $('button').prop('disabled', false)
   })
