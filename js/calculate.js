@@ -142,8 +142,7 @@ $(document).ready(function () {
   // CHECK FOR LENGTH & DISABLING BUTTONS
   function checkLength (num) {
     if (num.toString().length > 7 && num.toString().length < 14) {
-      $('#display').css('font-size', '35px')
-      $('#display').css('margin-top', '174px')
+      $('#display').css('font-size', '20px')
     } else if (num.toString().length > 16) {
       num = 'Infinity'
       $('button').prop('disabled', true)
@@ -156,7 +155,6 @@ $(document).ready(function () {
     var length = displayBox.innerHTML.length
     if (length > 7 && length < 14) {
       $('#display').css('font-size', '35px')
-      $('#display').css('margin-top', '174px')
     } else if (length > 14) {
       displayBox.innerHTML = 'Infinity'
       $('button').prop('disabled', true)
